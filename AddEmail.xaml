@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="T1907A.Layout.BT03.AddContact"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:T1907A.Layout.BT03"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <RelativePanel Margin="50,20,0,0">
+        <TextBox Width="200" x:Name="Email" Margin="0,10,0,0" PlaceholderText="Email" Text=""/>
+        <TextBox Width="200" RelativePanel.Below="Email" Margin="0,10,0,0" x:Name="Subject" PlaceholderText="Subject" Text=""/>
+        <Button x:Name="bt" Width="100" Height="30" Margin="0,10,0,0" RelativePanel.Below="Subject" Content="Submit" Click="AddMail" />
+        <Button Width="90" Height="30" Margin="10,10,0,0" RelativePanel.RightOf="bt" RelativePanel.Below="Subject" Content="GoBack"
+                Click="gobach"/>
+    </RelativePanel>
+</Page>
